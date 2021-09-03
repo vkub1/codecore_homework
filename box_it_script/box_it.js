@@ -10,6 +10,22 @@ function drawTopBorder(num) {
     }
 }
 
+function drawMiddleBorder(num) {
+    if (num === 0) {
+        return '┣┫';
+    } else {
+        return '┣' + drawLine(num-2) + '┫';
+    }
+}
+
+function drawBottomBorder() {
+    if (num === 0) {
+        return '┗┛';
+    } else {
+        return '┗' + drawLine(num-2) + '┛';
+    }
+}
+
 
 
 console.log(drawLine(0));
